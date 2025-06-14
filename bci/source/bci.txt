@@ -1,0 +1,540 @@
+<div class="widget-definition" id="modyo-1cddadeb-3c4b-4594-8231-b8166c7c8ee4/764f5cefb9b368ed2f064b4caddfd1d2bc0a99f8d35e616aef3abddd307168c5"><!-- CATEGORIES BAR -->
+<template id="categories-bar">
+	<aside class="list-categorie position-relative mb-lg-4 overflow-hidden bg-white">
+		<ul ref="contenedorMenu" @scroll="updateButtonVisibility" class="list-categorie__list overflow-auto w-100 d-flex align-items-stretch pr-4">
+			<li v-for="(category, index) in categories" :name="category.meta.name" :class="{active: currentCategory.name === category.meta.name}" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start" @click="setCurrentCategory(category)">
+				<figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2">
+					<img :src="category.fields['Icono'].url" :alt="category.meta.name" class="list-categorie__img position-absolute">
+					<img :src="category.fields['Icono hover'].url" :alt="category.meta.name" class="list-categorie__img list-categorie__img--hover position-absolute">
+				</figure>
+				<p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					${category.meta.name}
+				</p>
+			</li>
+		</ul>
+		<div v-if="!atStart" @click="scrollToStart" class="list-categorie__navigation list-categorie__navigation--left d-flex align-items-center justify-content-center px-20 position-absolute">
+			<span aria-hidden="true" class="icon-bci-chevron-down color-blue-normal animated-arrow h1 mb-0">
+			</span>
+		</div>
+		<div v-if="!atEnd" @click="scrollToEnd" class="list-categorie__navigation d-flex align-items-center justify-content-center px-20 position-absolute">
+			<span aria-hidden="true" class="icon-bci-chevron-down color-blue-normal animated-arrow h1 mb-0">
+			</span>
+		</div>
+	</aside>
+</template>
+<!-- CATEGORIES BAR -->
+
+<!-- BOX SUMMARY SELECTED FILTERS -->
+<template id="summary-selected-filters">
+	<transition name="fade">
+		<div v-if="data.length" class="search-tags d-flex flex-wrap">
+			<div v-for="tag in data" class="search-tag d-flex align-items-center justify-content-between">
+				<p class="search-tag__title color-gray-dark small mb-0">
+					${ tag.name | truncate(26) }
+				</p>
+				<button class="search-tag__button btn" @click="removeFilter(tag)">
+					<img class="search-tag__icon" src="https://cdn3.bci.cl/uploads/cc2a92c2-450e-46d9-adef-ffdc75238c27/original/cancel.svg" alt="remove tag">
+				</button>
+			</div>
+			<button @click="cleanFilters" style="text-transform: initial;" class="search-tags__button btn w-100 color-gray-dark medium-text font-weight-bold">
+				Limpiar filtros
+			</button>
+		</div>
+	</transition>
+</template>
+<!-- BOX SUMMARY SELECTED FILTERS -->
+
+<!-- SIDE PANEL FILTERS -->
+<template id="panel-filters">
+	<section class="search-filter pt-5 pt-lg-2">
+		
+
+		<dl class="search-filter-dl px-4 px-lg-0 pb-3" aria-label="Tipo beneficio">
+			<dt class="search-filter__title color-gray-dark mb-2">
+				Tipo beneficio
+			</dt>
+			<dd v-for="tagOffer in tagsOffer" class="search-filter-container">
+				<div class="custom-control custom-checkbox mb-2">
+					<input :id="'customCheckFilter' + tagOffer.meta.uuid" type="checkbox" v-model="selectedFilters" :value="{ name: tagOffer.meta.name, slug: tagOffer.meta.slug}" class="custom-control-input">
+					<label :for="'customCheckFilter' + tagOffer.meta.uuid" class="pl-2 custom-control-label medium-text">
+						${tagOffer.meta.name}
+					</label>
+				</div>
+			</dd>
+		</dl>
+
+		
+
+		<dl class="search-filter-dl px-4 px-lg-0 pb-3" aria-label="Tiendas oficiales">
+			<dt class="search-filter__title color-gray-dark mb-2">
+				Modalidad
+			</dt>
+			<dd v-for="tagMDP in tagsMDP" class="search-filter-container">
+				<div class="custom-control custom-checkbox mb-2">
+					<input :id="'customCheckFilter' + tagMDP.meta.uuid" type="checkbox" v-model="selectedFilters" :value="{ name: tagMDP.meta.name, slug: tagMDP.meta.slug}" class="custom-control-input">
+					<label :for="'customCheckFilter' + tagMDP.meta.uuid" class="pl-2 custom-control-label medium-text">
+						${tagMDP.meta.name}
+					</label>
+				</div>
+			</dd>
+		</dl>
+
+		<dl class="search-filter-dl px-4 px-lg-0" aria-label="Tiendas oficiales">
+			<dt class="search-filter__title color-gray-dark mb-2">
+				Pago en cuotas
+			</dt>
+			<dd v-for="tagFeet in tagsFeet" class="search-filter-container">
+				<div class="custom-control custom-checkbox mb-2">
+					<input :id="'customCheckFilter' + tagFeet.meta.uuid" type="checkbox" v-model="selectedFilters" :value="{ name: tagFeet.meta.name, slug: tagFeet.meta.slug}" class="custom-control-input">
+					<label :for="'customCheckFilter' + tagFeet.meta.uuid" class="pl-2 custom-control-label medium-text">
+						${tagFeet.meta.name}
+					</label>
+				</div>
+			</dd>
+		</dl>
+
+		<dl v-if="subcategories &amp;&amp; subcategories.length" class="search-filter-dl mb-5 px-4 px-lg-0 pb-4 pb-lg-0 mb-lg-3" aria-label="Tiendas oficiales">
+			<dt class="search-filter__title color-gray-dark">
+				Subcategorías
+			</dt>
+			<dd class="box-subcategories">
+				<div v-for="subCategorie in subcategories" class="search-filter-container">
+					<div class="custom-control custom-checkbox mb-2">
+						<input :id="'customCheckFilter' + subCategorie.meta.uuid" type="checkbox" v-model="selectedFilters" :value="{ name: subCategorie.meta.name, slug: subCategorie.meta.slug}" class="custom-control-input">
+						<label :for="'customCheckFilter' + subCategorie.meta.uuid" class="pl-2 custom-control-label medium-text">
+							${subCategorie.meta.name}
+						</label>
+					</div>
+				</div>
+			</dd>
+		</dl>
+	</section>
+</template>
+<!-- SIDE PANEL FILTERS -->
+
+<!-- PAGINATOR -->
+<template id="paginator">
+	<div class="paginator mb-0 mt-4 my-lg-4" v-if="pagination &amp;&amp; pagination.totalPages > 1">
+		<ul class="paginator__wrap py-1 px-3">
+			<li>
+				<button @click="prevPage" :disabled="firstPage" aria-label="prev page button" class="paginator__button paginator__button--left p-2 m-2 d-flex align-items-center justify-content-center">
+					<span class="icon-bci-chevron-down p-0 display-2 mb-0 px-1" style="transform: rotate(90deg);">
+					</span>
+				</button>
+			</li>
+			<li v-for="(page,index) in pagination.totalPages" :class="{last: (index+1 === pagination.totalPages &amp;&amp; Math.abs(index - pagination.currentPage) > 2), first:(index === 0 &amp;&amp; Math.abs(index - pagination.currentPage) > 3)}">
+				<button @click="changePage(index + 1)" :aria-label="'go to page number' + ' ' + (index + 1)" class="paginator__button p-2 m-2 d-flex align-items-center justify-content-center" :class="{'paginator__button--active': pagination.currentPage === index+1}" v-if="Math.abs(index+1 - pagination.currentPage) < 3 || index+1 === pagination.totalPages || index === 0">
+					${index+1}
+				</button>
+			</li>
+			<li>
+				<button @click="nextPage" aria-label="next page button" :disabled="lastPage" class="paginator__button paginator__button--right p-2 m-2 d-flex align-items-center justify-content-center">
+					<span class="icon-bci-chevron-down p-0 display-2 mb-0 px-1" style="transform: rotate(270deg);">
+					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</template>
+<!-- PAGINATOR -->
+
+<!-- BUSCADOR DE BENEFICIOS -->
+<template id="search-benefit">
+	<div class="content__search search-faq w-100 mr-2 mr-md-0">
+		<form role="search" @submit.prevent="preventSubmitForm()">
+			<label for="searchBenefits" class="hidden">Buscador</label>
+			<div class="inner-search">
+				<input id="searchBenefits" type="search" class="form-control border" aria-label="Search" placeholder="Buscar beneficio..." v-model="searchWord">
+			</div>
+		</form>
+		<!-- Sugerencias de Búsqueda -->
+		<div class="response__content bg-white" v-if="searchWord.length > 0">
+			<div class="border-radius-box-m shadow-normal mx-3 mx-lg-0">
+				<p class="pt-3 pb-3 pl-4 pr-4 mb-0">Resultados para: <b>${ searchWord }</b></p>
+				<ul class="pt-2 pb-3 pl-4 pr-4" v-if="results.length > 0">
+					<li v-for="result in results.slice(0, 7)" class="mt-2 mb-2">
+						<router-link :to="'/detalle/' + result.item.slug">
+							${ result.item.name }
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span>
+						</router-link>
+					</li>
+				</ul>
+				<ul class="pt-3 pb-3 pl-4 pr-4" v-else-if="searchWord.length <= 2">
+					<li>Ingresa más de dos letras.</li>
+				</ul>
+				<ul v-else="" class="pt-3 pb-3 pl-4 pr-4">
+					<li>No se encontraron resultados.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Fin Sugerencias de Búsqueda -->
+	</div>
+</template>
+
+<!-- SKELETON BENEFITS -->
+<template id="benefits">
+	<section class="benefits pt-5 pb-0 py-lg-5 position-relative overflow-hidden">
+		<!-- <div class="bg-circular-left-blue position-absolute"></div>
+		<div class="bg-right position-absolute"></div> -->
+		<div class="container position-relative">
+			<categories-bar></categories-bar>
+			<div class="benefits__wrap d-flex justify-contet-lg-between mt-lg-5 flex-wrap flex-lg-nowrap position-relative" style="z-index: 2;">
+				<aside class="search-sidebar p-0">
+
+					<div class="search-wrap-input-filter d-flex align-items-center justify-content-between px-3 py-2 px-md-4 p-lg-0">
+						<search-benefit v-if="benefits.data.length > 0" :benefits="benefits"></search-benefit>
+
+						<div class="search-btn-filter">
+							<button type="button" class="btn-sm px-2 py-1 d-flex d-lg-none align-items-center border-radius-box-s overflow-hidden" @click="togglePanel">
+								<span class="icon-bci-filter color-blue-normal h3 mb-0"></span>
+								<p class="h6 mb-0">Filtros</p>
+							</button>
+						</div>
+					</div>
+
+					<summary-selected-filters class="d-block d-lg-none px-4 pt-4 bg-white" :data="selectedFilters" @clean-filters="cleanFilters" @remove-filter="removeFilter($event)">
+					</summary-selected-filters>
+					<hr v-if="selectedFilters.length" class="d-block d-lg-none my-0 mx-4">
+
+					<div class="card d-none d-lg-block border border-radius-box-m p-4">
+						
+
+						<summary-selected-filters :data="selectedFilters" @clean-filters="cleanFilters" @remove-filter="removeFilter($event)">
+						</summary-selected-filters>
+
+						<panel-filters ref="panel-filters"></panel-filters>
+					</div>
+				</aside>
+
+				<div :class="selectedFilters.length ? 'mt-4' : 'mt-2'" class="w-100 mt-lg-0">
+					<div v-if="benefits.data.length" class="w-100 px-3 px-lg-0 pl-lg-4 d-flex flex-wrap align-items-stretch">
+						<div v-for="benefit in currentPageFilteredBenefits" class="carrousel__item d-inline-block mb-4">
+							<card-benefit-new :id-comercio="benefit.idComercio" :title="benefit.name" :medio-de-pago="benefit.medioDePago" :oferta="benefit.oferta" :bajada-texto="benefit.bajadaTexto" :cover-img="benefit.portada.imagen3" :tag-visible="benefit.tagVisible" :color-tag-visible="benefit.colorTagVisible" :logo="null" :text-link="benefit.textoBoton" :link="benefit.slug">
+							</card-benefit-new>
+						</div>
+						<div class="w-100" v-if="currentPageFilteredBenefits.length <= 0">
+							<p class="text-center py-5">No hay resultados.</p>
+						</div>
+					</div>
+					<div v-if="benefits.isLoading">
+						<p class="text-center py-5">Cargando...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-lg-none">
+				<div class="bci-panel bci-panel--right bci-panel--medium" :class="{'bci-panel--visible' : open}">
+					<div class="bci-panel__container">
+						<div class="cont-panel position-relative">
+							<div class="d-flex flex-row justify-content-between align-items-center bg-blue-normal text-white p-3">
+								<div class="d-flex align-items-center">
+									<span class="icon-bci-filter color-white display-4"></span>
+									<p class="h4 mb-0">Filtros</p>
+								</div>
+								<button @click="togglePanel" class="btn btn-sm text-white mb-0 p-0 d-flex align-items-center">
+									SALIR
+									<span class="icon-bci-exit icon-center h3 text-white pl-1 mb-0"></span>
+								</button>
+							</div>
+							<div class="panel-container position-absolute w-100">
+								<panel-filters v-if="isMobile"></panel-filters>
+							</div>
+						</div>
+					</div>
+					<span class="bci-panel__overlay"></span>
+				</div>
+			</div>
+		</div>
+		<paginator></paginator>
+	</section>
+</template>
+<!-- SKELETON BENEFITS -->
+
+<!-- BENEFIT SHOW -->
+<template id="benefit-show">
+	<div id="main-layout" class="back-gradient">
+		<div class="benefit-show">
+			<div class="py-5">
+				<!-- LOADING -->
+				<div v-if="isLoading" class="container">
+					<div class="row">
+						<div class="col-12">
+							<p class="text-center py-5">Cargando...</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- BENEFIT SHOW -->
+				<section v-else="" class="container" :id="'Comercio-' + benefit.idComercio">
+					<!-- v-if="benefit.isVisible" -->
+					<div class="row">
+						<!-- COMPONENT BREADCRUMB - PISO BENEFIT BASE -->
+						<div class="col-12">
+							<ul class="breadcrumbs-secondary mb-3 mt-lg-3">
+								<li class="d-flex align-items-center">
+									<a href="https://www.bci.cl/beneficios" aria-label="Ir al inicio" class="d-none d-lg-flex align-items-center mr-2 medium-text">
+										<span class="icon-bci-home mr-2 color-blue-normal"></span>
+										Beneficios
+									</a>
+									<span class="d-none d-lg-block">/</span>
+									<router-link to="/" class="d-flex align-items-center ml-0 ml-lg-2 mr-1 medium-text router-link-active" style="min-width: 95px;">
+										Beneficios Bci
+									</router-link>
+									<!-- <a
+										href="https://www.bci.cl/beneficios/beneficios-bci"
+										aria-label="Ir al inicio"
+										class="d-flex align-items-center ml-2 mr-1 medium-text"
+										style="min-width: 95px;">
+										Beneficios Bci
+									</a> -->
+									<span>/</span>
+									<p class="mb-0 ml-2 medium-text text-truncate">
+										${ benefit.name }
+									</p>
+								</li>
+							</ul>
+						</div>
+						<!-- COMPONENT BREADCRUMB - PISO BENEFIT BASE -->
+
+						<!-- DETALLE -->
+						<div class="col-12">
+							<div class="benefit-base row pt-3 pb-lg-4">
+                <div class="benefit-info col-12">
+                  <div class="row align-items-center">
+
+                    <!-- PISO IMAGEN -->
+                    <div class="order-1 order-lg-0 col-12 col-lg-6">
+                      <div class="benefit-base__wrap-images position-relative mx-auto mx-lg-0 h-100">
+                        <figure class="benefit-base__cover mt-3 mt-lg-0 w-100 h-100">
+                          <img class="w-100" :src="benefit.portada.imagen3" alt="Portada beneficio">
+                        </figure>
+                      </div>
+                    </div>
+
+                    <!-- PISO INFO -->
+                    <div class="order-0 order-lg-1 col-12 col-lg-6">
+                      <div class="benefit-base__wrap ml-lg-5 text-left">
+                        <div v-if="benefit.medioDePago.length" class="d-flex justify-content-start mb-2">
+                          <span class="badge badge-pill badge-primary bg-green-normal">${ benefit.medioDePago }</span>
+                        </div>
+                        <h1 class="h3 h1-lg">${ benefit.name }</h1>
+                        <p v-if="benefit.oferta.pretext.length" class="my-0">${ benefit.oferta.pretext }</p>
+                        <div v-if="benefit.oferta.info" class="d-flex align-items-center justify-content-start mb-2">
+                          <p class="badge-offer py-2 px-3" :class="benefit.oferta.class">${ benefit.oferta.info }</p>
+                        </div>
+												<p v-if="benefit.bajadaTexto.length">${ benefit.bajadaTexto }</p>
+                        <a v-if="benefit.link &amp;&amp; benefit.link.length" class="btn btn-primary mt-3 py-2 font-weight-bold mx-lg-0 d-none d-md-inline-flex align-items-center " target="_blank" href="https://www.bci.cl/corporativo/banco-en-linea/personas">
+                          ¡LO QUIERO!
+                        </a>
+												<button class="btn btn-primary mt-3 py-2 font-weight-bold mx-auto d-inline-flex align-items-center d-md-none" @click="openAppOrRedirect">
+													¡LO QUIERO!
+												</button>
+												<div class="d-flex align-items-center justify-content-start pt-4">
+													<p class="m-0">
+														<span class="icon-bci-date color-blue-normal"></span>
+														${ benefit.vencimiento }
+													</p>
+												</div>
+                      </div>
+                    </div>
+
+                    <!-- PISO DESCRIPCION -->
+                    <div class="order-2 order-lg-2 col-12 py-5">
+                      <div class="position-relative rich-text pb-1">
+                        <h3 class="mb-5">Descripción del Beneficio</h3>
+                        <ul v-if="benefit.details.length" class="p-0 m-0">
+                          <li v-for="(detail, index) in benefit.details">
+                            <p>${ detail }</p>
+                          </li>
+                        </ul>
+                        <ul v-if="benefit.descripcion" class="p-0 m-0">
+                          <li v-if="benefit.descripcion.html">
+																<div v-html="benefit.descripcion.content" style="white-space: break-spaces"></div>
+                          </li>
+                          <li v-else="" style="white-space: break-spaces">
+                            <p>${ benefit.descripcion.content }</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+
+                    <!-- PISO LEGAL & CONDICIONES BENEFIT -->
+                    <div class="col-12">
+                      <section class="py-2 py-lg-4">
+                        <div class="accordion" id="accordionLegal">
+                          <div class="card">
+                            <div class="card-header" id="headingLegalOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" style="outline:none;" type="button" data-toggle="collapse" data-target="#collapseLegalOne" aria-expanded="true" aria-controls="collapseLegalOne">
+                                  ¿Cómo obtengo este beneficio?
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseLegalOne" class="collapse show" aria-labelledby="headingLegalOne" data-parent="#accordionLegal">
+                              <div class="card-body">
+																<ol>
+																	<li>1.- Ingresa a tu Banco en Línea</li>
+																	<li>2.- Ingresa a Beneficios en el menú lateral</li>
+																	<li>3.- Sigue las instrucciones para activarlo</li>
+																</ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+
+                    <!-- PISO TARJETAS -->
+                    <div class="col-12 py-5">
+                      <section class="tarjetas d-flex flex-column flex-lg-row align-items-center justify-content-between p-0">
+                        <div>
+                          <img class="tarjetas__img" src="https://cdn3.bci.cl/uploads/40b8b1d1-24f4-474f-b086-9d25ac1ebf23/original/pack_tarjetas.webp" alt="pack tarjetas">
+                        </div>
+                        <p class="px-5 m-0 pt-5 pt-lg-0 text-center text-lg-left h4 pb-5 pb-lg-0">Recuerda que con tus <b>Tarjetas de Crédito Bci<span style="color: #005FFF;">Plus+</span></b> obtienes hasta <span class="text-primary"><b>1% de cashback adicional</b></span> en esta compra.</p>
+                      </section>
+                    </div>
+
+                    <!-- PISO LEGAL & CONDICIONES BENEFIT -->
+                    <div v-if="benefit.legal || benefit.condition" class="col-12">
+                      <section id="legal" class="legal is-section-bg py-2 py-lg-4">
+                        <!-- <h2 class="mb-4">Condiciones de la oferta</h2> -->
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" style="outline:none;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Condiciones de la oferta
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div v-if="benefit.legal" v-html="benefit.legal" style="white-space: break-spaces"></div>
+                                <div v-if="benefit.condition" v-html="benefit.condition" style="white-space: break-spaces"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+						</div>
+					</div>
+					
+				</section>
+			</div>
+		</div>
+	</div>
+</template>
+<!-- BENEFIT SHOW -->
+
+<!-- APP -->
+<section id="app"><section class="benefits pt-5 pb-0 py-lg-5 position-relative overflow-hidden"><div class="container position-relative"><aside class="list-categorie position-relative mb-lg-4 overflow-hidden bg-white"><ul class="list-categorie__list overflow-auto w-100 d-flex align-items-stretch pr-4"><li name="Todos" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start active"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/57a79bac-9697-4331-a115-8a94a8f00ed7/original/todos.svg" alt="Todos" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/d4486c43-8a2c-45ca-896e-0dd321d19b32/original/todos_hover.svg" alt="Todos" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Todos
+				</p></li><li name="Descuentos" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/68171b7f-ae16-4e6f-a8e1-a6636cdd5d0a/original/discount.svg" alt="Descuentos" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/19f7259e-9cfa-483f-98fe-8f0852fad7ef/original/discount_hover.svg" alt="Descuentos" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Descuentos
+				</p></li><li name="Cashback" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/8487ec95-f9b0-4cb0-8bd6-c31f6f5b1a55/original/cashback.svg" alt="Cashback" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/bf4ee4c0-33b4-4d44-92d3-d06131ab0dc3/original/cashback_hover.svg" alt="Cashback" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Cashback
+				</p></li><li name="Actívalo y Úsalo" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/bd3b91c2-65e1-4dca-99d6-2e1cb86743f8/original/activalo.svg" alt="Actívalo y Úsalo" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/094ad92f-e86e-4bcf-9010-1d1372d6aca9/original/activalo_hover.svg" alt="Actívalo y Úsalo" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Actívalo y Úsalo
+				</p></li><li name="Paga en cuotas" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/14bba1ff-ef85-4faa-a446-02a15610d492/original/credit_card_.svg" alt="Paga en cuotas" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/53853c6d-2573-4829-8d9b-02c876a56808/original/credit_card_hover.svg" alt="Paga en cuotas" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Paga en cuotas
+				</p></li><li name="Black/Signature
+/Infinite" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/14bba1ff-ef85-4faa-a446-02a15610d492/original/credit_card_.svg" alt="Black/Signature
+/Infinite" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/53853c6d-2573-4829-8d9b-02c876a56808/original/credit_card_hover.svg" alt="Black/Signature
+/Infinite" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Black/Signature
+/Infinite
+				</p></li><li name="Viajes" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/3014ed4d-0b0f-42fa-b8b4-25ed41f7effe/original/viajes.svg" alt="Viajes" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/54bb2f10-94af-42f9-8bb2-773d30112418/original/viajes_hover.svg" alt="Viajes" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Viajes
+				</p></li><li name="Deportes" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/c9d66ac5-48a1-4664-a15d-432b56159f88/original/fitness.svg" alt="Deportes" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/409ffaa2-c974-48dc-9088-8ace36ac7b8a/original/fitness_hover.svg" alt="Deportes" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Deportes
+				</p></li><li name="Restaurantes" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/27da1f17-110b-4a2a-834a-1b6f543c30b6/original/restaurant.svg" alt="Restaurantes" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/023d61d0-a5ea-463c-884b-5ce29f2b346b/original/restaurant_hover.svg" alt="Restaurantes" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Restaurantes
+				</p></li><li name="Antojos" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/d91e0d4a-785c-4cab-b832-dd0b758dd7dc/original/cookie.svg" alt="Antojos" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/d7c2d334-8ead-437f-8d14-bfa39647fb1c/original/cookie_hover.svg" alt="Antojos" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Antojos
+				</p></li><li name="Entretención" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/c19439b7-041d-43bd-9bfb-1d7cb840f737/original/entretencion.svg" alt="Entretención" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/3f7272e9-554b-429e-aadf-1e6ba024448f/original/entretencion_hover.svg" alt="Entretención" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Entretención
+				</p></li><li name="Supermercados" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/984b4912-ab14-4979-93c3-7a6471f058f8/original/shopping.svg" alt="Supermercados" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/8fc56c14-7cd0-4d19-8d53-6ec02d76b5f3/original/shopping_hover.svg" alt="Supermercados" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Supermercados
+				</p></li><li name="Salud y bienestar" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/91fa12e6-b567-4354-ba63-8daeee0186d6/original/spa.svg" alt="Salud y bienestar" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/1449604f-1bc2-423f-9e58-3c6f45483c62/original/spa_hover.svg" alt="Salud y bienestar" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Salud y bienestar
+				</p></li><li name="Tecnología y Marketplace" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/c00b7da6-5b38-4960-8eaa-56077385e704/original/computer.svg" alt="Tecnología y Marketplace" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/03aa0e5b-fa1f-422c-8a59-0f8cf1cb0eb4/original/computer_hover.svg" alt="Tecnología y Marketplace" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Tecnología y Marketplace
+				</p></li><li name="Moda Y vestuario" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/8214409b-9e51-47e1-84b9-8e411955d96d/original/colgador.svg" alt="Moda Y vestuario" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/0e41f019-bf26-4408-8ec5-9f790028db0b/original/colgador_hover.svg" alt="Moda Y vestuario" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Moda Y vestuario
+				</p></li><li name="Más Beneficios" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/a197b5cb-5acc-4b03-8b47-39f5f259ce59/original/more.svg" alt="Más Beneficios" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/4e0e41a2-35f3-407a-8dab-dc810489234e/original/more_hover.svg" alt="Más Beneficios" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Más Beneficios
+				</p></li><li name="Mall Vivo Los Trapenses" class="list-categorie__item py-2 py-lg-3 px-2 d-flex flex-column align-items-center justify-content-start"><figure class="list-categorie__wrap-img p-2 position-relative d-flex align-items-center justify-content-center mb-1 mb-lg-2"><img src="https://cdn3.bci.cl/uploads/17ffcd7a-7af3-4778-8adb-7ffb5205bae5/original/storefront.svg" alt="Mall Vivo Los Trapenses" class="list-categorie__img position-absolute"> <img src="https://cdn3.bci.cl/uploads/037e4887-3129-40db-8282-aaa912787567/original/storefront_hover.svg" alt="Mall Vivo Los Trapenses" class="list-categorie__img list-categorie__img--hover position-absolute"></figure> <p class="list-categorie__title mb-0 text-center medium-text d-flex align-items-center font-weight-bold">
+					Mall Vivo Los Trapenses
+				</p></li></ul> <!----> <div class="list-categorie__navigation d-flex align-items-center justify-content-center px-20 position-absolute"><span aria-hidden="true" class="icon-bci-chevron-down color-blue-normal animated-arrow h1 mb-0"></span></div></aside> <div class="benefits__wrap d-flex justify-contet-lg-between mt-lg-5 flex-wrap flex-lg-nowrap position-relative" style="z-index: 2;"><aside class="search-sidebar p-0"><div class="search-wrap-input-filter d-flex align-items-center justify-content-between px-3 py-2 px-md-4 p-lg-0"><div class="content__search search-faq w-100 mr-2 mr-md-0"><form role="search"><label for="searchBenefits" class="hidden">Buscador</label> <div class="inner-search"><input id="searchBenefits" type="search" aria-label="Search" placeholder="Buscar beneficio..." class="form-control border"></div></form> <!----></div> <div class="search-btn-filter"><button type="button" class="btn-sm px-2 py-1 d-flex d-lg-none align-items-center border-radius-box-s overflow-hidden"><span class="icon-bci-filter color-blue-normal h3 mb-0"></span> <p class="h6 mb-0">Filtros</p></button></div></div> <!----> <!----> <div class="card d-none d-lg-block border border-radius-box-m p-4"><!----> <section class="search-filter pt-5 pt-lg-2"><dl aria-label="Tipo beneficio" class="search-filter-dl px-4 px-lg-0 pb-3"><dt class="search-filter__title color-gray-dark mb-2">
+				Tipo beneficio
+			</dt> <dd class="search-filter-container"><div class="custom-control custom-checkbox mb-2"><input id="customCheckFiltertipo-1" type="checkbox" class="custom-control-input" value="[object Object]"> <label for="customCheckFiltertipo-1" class="pl-2 custom-control-label medium-text">
+						Cashback
+					</label></div></dd><dd class="search-filter-container"><div class="custom-control custom-checkbox mb-2"><input id="customCheckFiltertipo-2" type="checkbox" class="custom-control-input" value="[object Object]"> <label for="customCheckFiltertipo-2" class="pl-2 custom-control-label medium-text">
+						Descuento
+					</label></div></dd></dl> <dl aria-label="Tiendas oficiales" class="search-filter-dl px-4 px-lg-0 pb-3"><dt class="search-filter__title color-gray-dark mb-2">
+				Modalidad
+			</dt> <dd class="search-filter-container"><div class="custom-control custom-checkbox mb-2"><input id="customCheckFiltertipo-3" type="checkbox" class="custom-control-input" value="[object Object]"> <label for="customCheckFiltertipo-3" class="pl-2 custom-control-label medium-text">
+						Presencial
+					</label></div></dd><dd class="search-filter-container"><div class="custom-control custom-checkbox mb-2"><input id="customCheckFiltertipo-4" type="checkbox" class="custom-control-input" value="[object Object]"> <label for="customCheckFiltertipo-4" class="pl-2 custom-control-label medium-text">
+						Online
+					</label></div></dd></dl> <dl aria-label="Tiendas oficiales" class="search-filter-dl px-4 px-lg-0"><dt class="search-filter__title color-gray-dark mb-2">
+				Pago en cuotas
+			</dt> <dd class="search-filter-container"><div class="custom-control custom-checkbox mb-2"><input id="customCheckFiltertipo-5" type="checkbox" class="custom-control-input" value="[object Object]"> <label for="customCheckFiltertipo-5" class="pl-2 custom-control-label medium-text">
+						Cuotas sin interés
+					</label></div></dd><dd class="search-filter-container"><div class="custom-control custom-checkbox mb-2"><input id="customCheckFiltertipo-6" type="checkbox" class="custom-control-input" value="[object Object]"> <label for="customCheckFiltertipo-6" class="pl-2 custom-control-label medium-text">
+						Tasa preferencial
+					</label></div></dd></dl> <!----></section></div></aside> <div class="w-100 mt-lg-0 mt-2"><div class="w-100 px-3 px-lg-0 pl-lg-4 d-flex flex-wrap align-items-stretch"><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/pagando-con-tus-tarjetas-de-credito-bci-s7hemmm" class="" id-comercio="6818ca8cef8ce77f05846506"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/En-el-mes-de-la-Madr_85ce4fae_19-13_3.png" alt="Imagen Tus compras en 3 o 6 Cuotas sin interés"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Tus compras en 3 o 6 Cuotas sin interés
+						</p> <!----> <!----> <p class="card__bajada">Pagando con tus Tarjetas de Crédito Bci</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/encuentra-medicamentos-dermocosmeticos-y-todo-para-tu-salud-en-esta-farmacia.-ad279q" class="" id-comercio="62b3c52aa2e89771665ef27c"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/Salcobrand_b51b09dc_18-54_3.png" alt="Imagen Salcobrand"> <!----> <div class="position-absolute" style="bottom: 5px; left: 15px;"><span class="badge badge-pill badge-primary bg-green-normal">Online</span></div></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Salcobrand
+						</p> <p class="card__bajada">Hasta</p> <div class="d-flex align-items-center mb-2"><p class="badge-offer py-2 px-3 badge-offer--green">20% cashback</p></div> <p class="card__bajada">Encuentra medicamentos dermocosméticos y todo para tu salud en esta farmacia.</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/recupera-el-total-de-tu-primera-cuota-con-este-beneficio-eha8y0h" class="" id-comercio="661e8ed66e769614330f5e72"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/Bci-seguro-automotri_c2ab7959_14-35_3.png" alt="Imagen Bci seguro automotriz"> <!----> <div class="position-absolute" style="bottom: 5px; left: 15px;"><span class="badge badge-pill badge-primary bg-green-normal">Online</span></div></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Bci seguro automotriz
+						</p> <p class="card__bajada">Hasta</p> <div class="d-flex align-items-center mb-2"><p class="badge-offer py-2 px-3 badge-offer--green">100% cashback</p></div> <p class="card__bajada">Recupera el total de tu primera cuota con este beneficio</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/del-10-al-17-de-junio-n2ah789" class="" id-comercio="679f0b87f8f42e25c69e158c"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/Adidas---Campa%C3%B1a-Dep_d75dc7a4_2-48_3.png" alt="Imagen Adidas - Campaña Deportes"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Adidas - Campaña Deportes
+						</p> <!----> <div class="d-flex align-items-center mb-2"><p class="badge-offer py-2 px-3 badge-offer--blue">30% descuento</p></div> <p class="card__bajada">Del 10 al 17 de Junio</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/tus-bebidas-favoritas-de-la-familia-coca-cola-directo-a-la-casa-1miq5eq" class="" id-comercio="66c4b887efa8916299236a01"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/miCoca-Cola.cl---Des_d05dd532_4-29_3.png" alt="Imagen miCoca-Cola.cl - Descuento"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							miCoca-Cola.cl - Descuento
+						</p> <!----> <div class="d-flex align-items-center mb-2"><p class="badge-offer py-2 px-3 badge-offer--blue">25% descuento</p></div> <p class="card__bajada">Tus bebidas favoritas de la familia Coca-Cola directo a la casa</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/de-lunes-a-viernes-5x-de-cashback-pagando-con-tus-tarjetas-de-credito-bciplus-zbuen2" class="" id-comercio="6814f99cef8ce7881a80a954"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/Oxxo-5X-de-cashback_c2a2484f_17-13_3.png" alt="Imagen Oxxo 5X de cashback"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Oxxo 5X de cashback
+						</p> <!----> <!----> <p class="card__bajada">Almacén o tienda de conveniencia con variedad de productos para el día a día. </p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/pagando-con-tus-tarjetas-de-credito-bci-g45wxzf" class="" id-comercio="68375fdcff2fc7e6aaba814a"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/%22%C2%A1Planifica-ese-viaj_d682d094_18-33_3.png" alt="Imagen ¡Planifica ese viaje ideal! y paga en 12 cuotas sin interés"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							¡Planifica ese viaje ideal! y paga en 12 cuotas sin interés
+						</p> <!----> <!----> <p class="card__bajada">Pagando con tus Tarjetas de Crédito Bci</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/lunes-y-viernes-mhtglpe" class="" id-comercio="676f2328141558510ca18908"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/Starbucks---Descuent_3a801cb9_4-45_3.png" alt="Imagen Starbucks - Descuento"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Starbucks - Descuento
+						</p> <!----> <div class="d-flex align-items-center mb-2"><p class="badge-offer py-2 px-3 badge-offer--blue">30% descuento</p></div> <p class="card__bajada">Lunes y viernes</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div><div class="carrousel__item d-inline-block mb-4"><a href="/beneficios/beneficios-bci/detalle/todos-los-miercoles-45y4ptl" class="" id-comercio="651c219ffe98813407a6da6b"><article class="card-benefit-v2 card card-img card-img--top border-radius-box-s border overflow-hidden"><figure class="card-img__bg card-img__bg--big p-0 m-0 position-relative"><img src="https://www.bciplus.cl/storages/loyalty/campaigns-images/Burger-King---Descue_a800828c_13-18_3.png" alt="Imagen Burger King - Descuento"> <!----> <!----></figure> <div class="card-body p-0"><div class="h-100 d-flex flex-column justify-content-start"><div class="py-4 px-3 px-lg-4"><p class="card__title color-gray-dark font-weight-bold mb-3 text-truncate-2">
+							Burger King - Descuento
+						</p> <!----> <div class="d-flex align-items-center mb-2"><p class="badge-offer py-2 px-3 badge-offer--blue">40% descuento</p></div> <p class="card__bajada">Las mejores burger a la parrilla con una amplia oferta al más puro estilo estadounidense.</p></div> <div class="border-top d-flex align-items-center justify-content-center p-0 mt-auto"><div class="sub-text btn btn-link-light d-flex w-100 align-items-center justify-content-center text-uppercase py-3 m-0">
+							¡Lo quiero!
+							<span class="icon-bci-add-circle-outline color-blue-normal"></span></div></div></div></div></article></a></div> <!----></div> <!----></div></div> <div class="d-lg-none"><div class="bci-panel bci-panel--right bci-panel--medium"><div class="bci-panel__container"><div class="cont-panel position-relative"><div class="d-flex flex-row justify-content-between align-items-center bg-blue-normal text-white p-3"><div class="d-flex align-items-center"><span class="icon-bci-filter color-white display-4"></span> <p class="h4 mb-0">Filtros</p></div> <button class="btn btn-sm text-white mb-0 p-0 d-flex align-items-center">
+									SALIR
+									<span class="icon-bci-exit icon-center h3 text-white pl-1 mb-0"></span></button></div> <div class="panel-container position-absolute w-100"><!----></div></div></div> <span class="bci-panel__overlay"></span></div></div></div> <div class="paginator mb-0 mt-4 my-lg-4"><ul class="paginator__wrap py-1 px-3"><li><button disabled="disabled" aria-label="prev page button" class="paginator__button paginator__button--left p-2 m-2 d-flex align-items-center justify-content-center"><span class="icon-bci-chevron-down p-0 display-2 mb-0 px-1" style="transform: rotate(90deg);"></span></button></li> <li class=""><button aria-label="go to page number 1" class="paginator__button p-2 m-2 d-flex align-items-center justify-content-center paginator__button--active">
+					1
+				</button></li><li class=""><button aria-label="go to page number 2" class="paginator__button p-2 m-2 d-flex align-items-center justify-content-center">
+					2
+				</button></li><li class=""><button aria-label="go to page number 3" class="paginator__button p-2 m-2 d-flex align-items-center justify-content-center">
+					3
+				</button></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class=""><!----></li><li class="last"><button aria-label="go to page number 29" class="paginator__button p-2 m-2 d-flex align-items-center justify-content-center">
+					29
+				</button></li> <li><button aria-label="next page button" class="paginator__button paginator__button--right p-2 m-2 d-flex align-items-center justify-content-center"><span class="icon-bci-chevron-down p-0 display-2 mb-0 px-1" style="transform: rotate(270deg);"></span></button></li></ul></div></section></section>
+<!-- APP --></div>
