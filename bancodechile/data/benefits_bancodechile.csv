@@ -1,0 +1,356 @@
+id,title,description,bank,provider,category,is_active,created_at,updated_at
+1,Lounge,"20% dto. adicional sobre el precio vigente, todos los domingos.",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848230,2025-06-14T00:15:33.848253
+2,Taringa,40% dto. todos los sábados de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848270,2025-06-14T00:15:33.848272
+3,Imared,20% dto. todos los días en pagos presenciales,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848283,2025-06-14T00:15:33.848285
+4,Poliglota,Hasta 76% dto. para estudiar idiomas,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848293,2025-06-14T00:15:33.848294
+5,Solar Fotovoltaica,4 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848301,2025-06-14T00:15:33.848303
+6,Kaya Unite,40% dto. presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848310,2025-06-14T00:15:33.848311
+7,Rally Kart,Hasta 40% dto. en vueltas todos los días presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848318,2025-06-14T00:15:33.848319
+8,La Bodeguita Miguel Torres,50% dto. los viernes de junio con tu Tarjeta Visa Infinite,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848327,2025-06-14T00:15:33.848328
+9,Wendys,Viernes 30% dto. en compras presenciales.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848336,2025-06-14T00:15:33.848337
+10,Espacio Caju – Stay and play café,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848344,2025-06-14T00:15:33.848345
+11,Exclusivo Clientes Plan Océano,40% dto. en grandes marcas de vestuario y calzado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848353,2025-06-14T00:15:33.848355
+12,Exclusivo Clientes Plan Cordillera,30% dto. en grandes marcas de vestuario y calzado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848363,2025-06-14T00:15:33.848364
+13,ULTIMATE FITNESS,20% dto. adicional todos los jueves del mes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848372,2025-06-14T00:15:33.848373
+14,Brando,25% dto. lunes presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848380,2025-06-14T00:15:33.848382
+15,MacOnline Apple,Lo mejor de Apple en 4 a 24 cuotas sin interés con tus Tarjetas de Crédito del Chile,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848389,2025-06-14T00:15:33.848391
+16,Danubio Azul,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848411,2025-06-14T00:15:33.848413
+17,DO SUSHI,20% dto. jueves y viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848421,2025-06-14T00:15:33.848422
+18,Trattoria Santtino,20% dto. martes y jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848432,2025-06-14T00:15:33.848433
+19,Prima Bar,20% dto . todos los miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848440,2025-06-14T00:15:33.848441
+20,El Nuevo Arriero,20% dto. lunes a viernes horario almuerzo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848448,2025-06-14T00:15:33.848449
+21,La Divina Comida,20% dto. miércoles a viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848456,2025-06-14T00:15:33.848457
+22,Under Armour,40% dto. viernes 13 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848464,2025-06-14T00:15:33.848465
+23,Hush Puppies,40% dto. viernes 13 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848473,2025-06-14T00:15:33.848474
+24,CAT,40% dto. jueves 12 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848481,2025-06-14T00:15:33.848482
+25,Columbia,40% dto. jueves 12 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848489,2025-06-14T00:15:33.848490
+26,Rockford,40% dto. miércoles 11 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848497,2025-06-14T00:15:33.848498
+27,Crocs,40% dto. martes 10 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848513,2025-06-14T00:15:33.848515
+28,Merrell,40% dto. martes 10 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848521,2025-06-14T00:15:33.848522
+29,Zapatos.cl,40% dto. lunes 09 de junio en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848529,2025-06-14T00:15:33.848530
+30,Cassis,"20% dto. los lunes en ""Cafetería"" de la carta ""Para Tomar""",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848537,2025-06-14T00:15:33.848538
+31,Nikola,Paga en 4 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848546,2025-06-14T00:15:33.848547
+32,Teatro Mori,30% dto. en obras,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848554,2025-06-14T00:15:33.848555
+33,Majestic,30% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848562,2025-06-14T00:15:33.848563
+34,Lineatre,20% dto. los lunes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848570,2025-06-14T00:15:33.848571
+35,Yokono Sushi,35% dto. lunes a miércoles en retiro y delivery,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848577,2025-06-14T00:15:33.848578
+36,Glam & Co,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848585,2025-06-14T00:15:33.848587
+37,iO,20% dto. todos los días en compra presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848593,2025-06-14T00:15:33.848594
+38,ZOO YORK,30% dto. todos los lunes en compra presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848601,2025-06-14T00:15:33.848603
+39,BondUP,"6 meses gratis de psicología, telemedicina y entretenimiento.",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848610,2025-06-14T00:15:33.848611
+40,Hands & Company,30% dto. en servicios presenciales los días lunes y martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848618,2025-06-14T00:15:33.848619
+41,FLIXBUS,25% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848629,2025-06-14T00:15:33.848630
+42,Toke,20% dto. en compras presencial y online todos los lunes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848637,2025-06-14T00:15:33.848638
+43,Bodega Parma,40% dto. todos los lunes de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848645,2025-06-14T00:15:33.848646
+44,Kiara,50% dto. todos los lunes de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848653,2025-06-14T00:15:33.848654
+45,Rappi,Disfrutar un nuevo sabor cada día,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848660,2025-06-14T00:15:33.848662
+46,TERRA FORCE,20% dto adicional. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848668,2025-06-14T00:15:33.848669
+47,SNOW FORCE,20% dto adicional. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848685,2025-06-14T00:15:33.848686
+48,AQUA FORCE,20% dto adicional. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848694,2025-06-14T00:15:33.848695
+49,DELTAMOTORS,20% dto. todos los días presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848701,2025-06-14T00:15:33.848702
+50,De Flores y Floreros,10% dto. miércoles presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848709,2025-06-14T00:15:33.848710
+51,BO Concept,15% dto. en compra presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848717,2025-06-14T00:15:33.848718
+52,7Veinte,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848842,2025-06-14T00:15:33.848846
+53,Flux Solar,Compra tu planta solar de 6 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848856,2025-06-14T00:15:33.848858
+54,EnelX,Paga en 13 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848865,2025-06-14T00:15:33.848867
+55,CLUB DE PADEL DE LA FLORIDA,Hasta 25% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848873,2025-06-14T00:15:33.848875
+56,MOTA,25% dto. en compras online todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848881,2025-06-14T00:15:33.848883
+57,CAFFARENA,30% dto. en compras online todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848890,2025-06-14T00:15:33.848891
+58,GRAVAT,30% dto. todos los días online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848899,2025-06-14T00:15:33.848900
+59,DBS,20% dto. todos los miércoles en compra online con tus Tarjetas del Chile.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848907,2025-06-14T00:15:33.848908
+60,Marathon,20% dto. adicional presencial y online.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848916,2025-06-14T00:15:33.848917
+61,El Naturalista,Hasta 20% dto. en compra presencial lunes y jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848924,2025-06-14T00:15:33.848925
+62,PLANT ME,20% dto. presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848932,2025-06-14T00:15:33.848942
+63,Zona Verde,Hasta 20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848950,2025-06-14T00:15:33.848951
+64,Green Glass,15% dto. en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848958,2025-06-14T00:15:33.848959
+65,ÜÑÜ,20% dto. online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848966,2025-06-14T00:15:33.848967
+66,Biobrush,25% dto online todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848973,2025-06-14T00:15:33.848975
+67,Maríabooth,15% dto. todos los días en compra online.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848981,2025-06-14T00:15:33.848982
+68,Movistar,Paga en 13 hasta 24 cuotas sin interés,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848989,2025-06-14T00:15:33.848991
+69,Specialized,Paga 4 a 12 cuotas sin interés,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.848997,2025-06-14T00:15:33.848999
+70,Entel,Paga en 13 a 18 cuotas sin interés,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849005,2025-06-14T00:15:33.849006
+71,AUFBAU,Paga en 13 a 24 cuotas sin interés con tus Tarjetas de Crédito del Chile,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849013,2025-06-14T00:15:33.849014
+72,Samsung,Paga hasta en 24 cuotas sin interés en compra online y tiendas.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849022,2025-06-14T00:15:33.849023
+73,Calcetines Bacanes,20% dto. en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849030,2025-06-14T00:15:33.849031
+74,Trauko,15% dto. todos los días en sitio web,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849038,2025-06-14T00:15:33.849039
+75,MARLEY COFFEE,35% dto los miércoles online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849046,2025-06-14T00:15:33.849047
+76,ChileLentes,Hasta un 25% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849054,2025-06-14T00:15:33.849055
+77,Rotter y Krauss,Hasta 35% dto. martes en compra presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849062,2025-06-14T00:15:33.849063
+78,Bouden,20% dto. martes online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849070,2025-06-14T00:15:33.849071
+79,La Fête Chocolat,20% dto. los lunes presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849077,2025-06-14T00:15:33.849079
+80,MDF,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849085,2025-06-14T00:15:33.849087
+81,Doite,20% dto. en compras presenciales y online todos los martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849093,2025-06-14T00:15:33.849094
+82,Tommy Beans,Miércoles 40% dto. a través de la App de cada marca y 30% dto. en compras presenciales.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849101,2025-06-14T00:15:33.849102
+83,TESSA,20% dto. jueves presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849110,2025-06-14T00:15:33.849111
+84,AV ODONTOLOGÍA,Hasta un 60% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849117,2025-06-14T00:15:33.849118
+85,Restaurante Ana María,20% dto. miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849125,2025-06-14T00:15:33.849127
+86,Bar Imperial,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849133,2025-06-14T00:15:33.849135
+87,BANGKOK THAI,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849141,2025-06-14T00:15:33.849142
+88,Ari Nikkei,20% dto. martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849149,2025-06-14T00:15:33.849150
+89,Ramblas,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849156,2025-06-14T00:15:33.849157
+90,Don Teo Santiago,20% dto. viernes a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849164,2025-06-14T00:15:33.849165
+91,Japón Ya,20% dto. miércoles y jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849171,2025-06-14T00:15:33.849172
+92,Barrica 94,50% dto. todos los jueves de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849179,2025-06-14T00:15:33.849180
+93,Capogrossi,50% dto. los martes de junio con tu Tarjeta Visa Infinite,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849188,2025-06-14T00:15:33.849189
+94,Transvip,15% dto en servicios,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849196,2025-06-14T00:15:33.849197
+95,Green Lab,20% dto. jueves a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849203,2025-06-14T00:15:33.849205
+96,Vietnam Dicovery,20% dto. martes a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849211,2025-06-14T00:15:33.849212
+97,La Cocina de Javier,30% dto. los martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849219,2025-06-14T00:15:33.849220
+98,Novu,20% dto. los días lunes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849226,2025-06-14T00:15:33.849227
+99,PECES DE CIUDAD,20% dto. miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849233,2025-06-14T00:15:33.849234
+100,Casona Del Virrey,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849241,2025-06-14T00:15:33.849242
+101,Fabrics,Hasta 40% dto. en ropa de cama y baño,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849249,2025-06-14T00:15:33.849250
+102,Bao Bar,40% dto. todos los sábados de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849256,2025-06-14T00:15:33.849258
+103,Expendio,Hasta 30% dto. sábados y domingos,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849264,2025-06-14T00:15:33.849265
+104,Restaurante Isabella,20% dto. martes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849321,2025-06-14T00:15:33.849323
+105,BAR PLAZA,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849331,2025-06-14T00:15:33.849332
+106,Gorilas,20% dto. jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849339,2025-06-14T00:15:33.849340
+107,Uber Eats: McDonald’s,Los martes obtén 40% dto. en McDonalds,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849347,2025-06-14T00:15:33.849348
+108,China Wok,Viernes 30% dto. en compras presenciales.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849358,2025-06-14T00:15:33.849360
+109,KFC,Jueves 30% dto. en compras presenciales.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849366,2025-06-14T00:15:33.849368
+110,Doggis,40% dto pidiendo por la App y 30% dto presencial los miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849374,2025-06-14T00:15:33.849375
+111,Juan Maestro,40% dto pidiendo por la App y 30% dto presencial los miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849383,2025-06-14T00:15:33.849384
+112,Dunkin’,30% dto. lunes y miércoles en compra presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849400,2025-06-14T00:15:33.849402
+113,Taringuita Mall Sport,40% dto. todos los martes de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849411,2025-06-14T00:15:33.849413
+114,PAD THAI,40% dto. todos los miércoles de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849419,2025-06-14T00:15:33.849421
+115,Verde Sazón,40% dto. todos los miércoles de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849428,2025-06-14T00:15:33.849429
+116,Vicenzo,40% dto. todos los jueves de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849436,2025-06-14T00:15:33.849437
+117,Casa Morera,40% dto. todos los jueves de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849444,2025-06-14T00:15:33.849445
+118,Ruca Bar,40% dto. todos los viernes de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849452,2025-06-14T00:15:33.849453
+119,Porfirio,40% dto. todos los domingos de junio,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849459,2025-06-14T00:15:33.849461
+120,Car Broker Chile,Hasta 25% dto. en servicios presenciales,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849467,2025-06-14T00:15:33.849468
+121,DR SMILE,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849476,2025-06-14T00:15:33.849477
+122,CLICKEPP,20% dto. todos los días online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849484,2025-06-14T00:15:33.849485
+123,La Barra,Beneficios exclusivos todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849492,2025-06-14T00:15:33.849494
+124,Burano,15% dto adicional. todos los días online y presencial.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849501,2025-06-14T00:15:33.849502
+125,BENETTON,20% dto. lunes a jueves en compra presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849509,2025-06-14T00:15:33.849510
+126,Ultimate Clothing,25% dto. adicional los días martes y jueves.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849517,2025-06-14T00:15:33.849518
+127,Copas y Cervezas,25% dto. en planes semestrales.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849525,2025-06-14T00:15:33.849526
+128,ASH,20% dto. todos los días presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849533,2025-06-14T00:15:33.849534
+129,L´Occitane,"20% dto. los miércoles, jueves y viernes en compra presencial",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849540,2025-06-14T00:15:33.849541
+130,Bazhars Alfombras,10% dto. adicional en compra online y presencial todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849549,2025-06-14T00:15:33.849550
+131,Revesderecho,20% dto. miércoles en compras online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849557,2025-06-14T00:15:33.849559
+132,Nevada Novias,15% dto. todos los días presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849566,2025-06-14T00:15:33.849567
+133,Clinica Everest,Paga en 7 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849574,2025-06-14T00:15:33.849575
+134,Tika,30% dto. todos los días online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849582,2025-06-14T00:15:33.849583
+135,Al Pesto,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849590,2025-06-14T00:15:33.849591
+136,Asia Skincare,20% dto. los miércoles presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849597,2025-06-14T00:15:33.849598
+137,Bellapiel,20% dto. lunes a jueves en servicios,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849605,2025-06-14T00:15:33.849607
+138,Centro Odontológico Dr. Alvaro Peña Páez,Hasta 35% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849613,2025-06-14T00:15:33.849614
+139,Aesthetic Place Dr. Roy Sothers,15% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849622,2025-06-14T00:15:33.849623
+140,ONEDENT,sobre el arancel de ONEDENT,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849630,2025-06-14T00:15:33.849631
+141,CARBEL COFFEE & PASTRY,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849638,2025-06-14T00:15:33.849639
+142,Ma Griffe,20% dto. todos los días en compras online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849646,2025-06-14T00:15:33.849647
+143,LA PIZZARRA,lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849654,2025-06-14T00:15:33.849655
+144,Farmex,Hasta 20% dto. en compra online todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849662,2025-06-14T00:15:33.849663
+145,Local Burger,20% de dto. viernes a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849671,2025-06-14T00:15:33.849672
+146,CLARO,Paga en 13 a 18 cuotas sin interés,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849678,2025-06-14T00:15:33.849679
+147,Nuna Restaurante,15% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849686,2025-06-14T00:15:33.849687
+148,PET FAMILY,Hasta 15% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849694,2025-06-14T00:15:33.849695
+149,Trayecto Bookstore,20% dto. lunes y martes en compra presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849702,2025-06-14T00:15:33.849703
+150,Sushiban,25% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849710,2025-06-14T00:15:33.849711
+151,ISTANWOOL,10% dto. adicional en compra presencial todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849718,2025-06-14T00:15:33.849719
+152,Maria La Biyux,20% dto online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849726,2025-06-14T00:15:33.849727
+153,Dominga Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849733,2025-06-14T00:15:33.849734
+154,Cafetería Le Grand de La Fete Dólares Premio,Consumo por $30.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849741,2025-06-14T00:15:33.849742
+155,Casa Morera Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849792,2025-06-14T00:15:33.849794
+156,CONEY JUMP + YUKIDS,35% dto. En los 40 minutos de juego todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849802,2025-06-14T00:15:33.849803
+157,Tirua Bar Restorán,20% dto. martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849811,2025-06-14T00:15:33.849812
+158,CEVICHAZO 102,"20% dto. lunes, viernes y sábado",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849819,2025-06-14T00:15:33.849820
+159,Peluquería Francesa,20% dto. lunes a sábado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849827,2025-06-14T00:15:33.849828
+160,SABOR Y AROMA,20% dto. lunes a sábado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849835,2025-06-14T00:15:33.849836
+161,Infiltrados,"20% dto. martes, miércoles y sábados",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849851,2025-06-14T00:15:33.849853
+162,La Biferia,20% dto. lunes a sábado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849860,2025-06-14T00:15:33.849861
+163,Clínica Versalles,Hasta 50% dto.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849868,2025-06-14T00:15:33.849869
+164,SUSHI THAI,20% dto. lunes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849876,2025-06-14T00:15:33.849877
+165,511 The Hemingway Room,20% dto. lunes y martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849883,2025-06-14T00:15:33.849885
+166,Tropicalia,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849891,2025-06-14T00:15:33.849893
+167,CONFITERIA LARBOS,"20% dto. lunes, martes y miércoles",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849899,2025-06-14T00:15:33.849900
+168,Clínica Bast,20% dto. martes y miércoles presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849908,2025-06-14T00:15:33.849909
+169,Carolina Varela,Paga en 4 a 12 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849916,2025-06-14T00:15:33.849917
+170,Caleta la Reina,25% dto. miércoles y jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849924,2025-06-14T00:15:33.849926
+171,NOLIA,20% dto. martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849932,2025-06-14T00:15:33.849934
+172,BAR ENIGMA,20% dto. martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849940,2025-06-14T00:15:33.849942
+173,Make Make,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849948,2025-06-14T00:15:33.849949
+174,CHIAROSCURO PANORAMICO,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849956,2025-06-14T00:15:33.849957
+175,ZAIKA COMIDA INDIA,20% dto. los sábados,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849964,2025-06-14T00:15:33.849965
+176,CASAGIARDINO,20% dto. martes a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849972,2025-06-14T00:15:33.849974
+177,PAWER,Hasta 18% dto. en contratación de planes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849980,2025-06-14T00:15:33.849981
+178,El Ají Seco Maipú,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849988,2025-06-14T00:15:33.849989
+179,Kechua,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.849996,2025-06-14T00:15:33.849997
+180,VERDE SAZÓN,25% dto de lunes a sábado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850004,2025-06-14T00:15:33.850005
+181,SOCIEDAD O306,20% dto. los martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850012,2025-06-14T00:15:33.850013
+182,Tigre Bravo,lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850019,2025-06-14T00:15:33.850021
+183,VistAndes,20% dto. lunes a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850027,2025-06-14T00:15:33.850028
+184,AquaChile,20% dto los jueves online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850035,2025-06-14T00:15:33.850036
+185,Azaleia,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850043,2025-06-14T00:15:33.850044
+186,ESTACIONAMIENTO AUTOPARK,20% dto todos los días online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850051,2025-06-14T00:15:33.850052
+187,Deysa Care,20% dto todos los días online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850059,2025-06-14T00:15:33.850060
+188,Tortas Amelia,20% dto todos los días online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850067,2025-06-14T00:15:33.850068
+189,Minata Clean Beauty,20% dto los martes online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850075,2025-06-14T00:15:33.850076
+190,Taco Bell,40% dto los jueves presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850083,2025-06-14T00:15:33.850084
+191,Nosu,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850091,2025-06-14T00:15:33.850092
+192,TUA,20% dto. los miércoles en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850098,2025-06-14T00:15:33.850100
+193,María Pompón,15% dto. adicional lunes y miércoles presencial y online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850107,2025-06-14T00:15:33.850108
+194,Dily,Hasta 30% dto todos los días online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850116,2025-06-14T00:15:33.850118
+195,AutoExpertos,25% dto todos los días online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850125,2025-06-14T00:15:33.850126
+196,ProwashGo,20% dto lunes a sábado online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850133,2025-06-14T00:15:33.850135
+197,icarcheck,20% dto todos los días online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850142,2025-06-14T00:15:33.850143
+198,GOOTA,20% dto. en alimentos probióticos,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850150,2025-06-14T00:15:33.850151
+199,FCO Motor Services,25% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850158,2025-06-14T00:15:33.850159
+200,Mercado Carozzi,Desde 20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850166,2025-06-14T00:15:33.850167
+201,Zenclinic dental,30% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850174,2025-06-14T00:15:33.850175
+202,EVERLAST,30% dto. todos los lunes en compra presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850181,2025-06-14T00:15:33.850183
+203,Petrizzio,30% dto. jueves y viernes en petrizzio.cl,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850189,2025-06-14T00:15:33.850190
+204,Ancares Café,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850197,2025-06-14T00:15:33.850198
+205,3INA,20% dto. martes y miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850205,2025-06-14T00:15:33.850206
+206,Cine Star,Canjea hasta el 100% con tus Dólares-Premio.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850213,2025-06-14T00:15:33.850214
+207,Eshopex,20% dto. en flete internacional.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850221,2025-06-14T00:15:33.850222
+208,Tanaka Vitacura Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850229,2025-06-14T00:15:33.850230
+209,All Play Kids Zone,20% dto. lunes a viernes de manera presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850257,2025-06-14T00:15:33.850259
+210,Laqu,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850266,2025-06-14T00:15:33.850267
+211,CONSERBAR,20% dto. miércoles y sábado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850282,2025-06-14T00:15:33.850284
+212,Carl’s Jr.,20% dto. todos los miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850291,2025-06-14T00:15:33.850292
+213,Fashion's Park,Hasta 25% dto. adicional en compra online y presencial.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850299,2025-06-14T00:15:33.850301
+214,Quiero Mi Masaje,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850308,2025-06-14T00:15:33.850309
+215,Gaes,Paga en 13 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850315,2025-06-14T00:15:33.850317
+216,HIFI,4 a 24 cuotas sin interes.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850323,2025-06-14T00:15:33.850324
+217,WOM,Paga en 13 a 24 cuotas sin interés,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850331,2025-06-14T00:15:33.850332
+218,VTR,Paga en 13 a 18 cuotas sin interés todos tus equipos nuevos,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850339,2025-06-14T00:15:33.850340
+219,Horwin,Paga en 13 a 24 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850347,2025-06-14T00:15:33.850348
+220,CNO,Paga en 7 a 12 cuotas sin interés tus tratamientos odontológicos en clínicas pertenecientes a CNO,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850355,2025-06-14T00:15:33.850356
+221,Be electric,Paga en 6 a 24 cuotas sin interés todos los días en productos.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850365,2025-06-14T00:15:33.850366
+222,Abastible,Paga en 13 a 24 cuotas sin interés,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850373,2025-06-14T00:15:33.850374
+223,LA MURTA,20% dto. viernes a domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850381,2025-06-14T00:15:33.850382
+224,Burger vs Pizza,"20% dto. viernes, sábado y domingo",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850388,2025-06-14T00:15:33.850390
+225,EMPIRICO,20% dto. los miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850396,2025-06-14T00:15:33.850398
+226,SABOR X2,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850404,2025-06-14T00:15:33.850405
+227,Saki,20% de dto. martes y jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850412,2025-06-14T00:15:33.850413
+228,La Bonaerense,20% dcto. de lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850419,2025-06-14T00:15:33.850421
+229,HELADERIA LARRS,30% dto. los días lunes pagando con tus Tarjetas del Chile,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850427,2025-06-14T00:15:33.850428
+230,Buffet Express,20% dto. Lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850436,2025-06-14T00:15:33.850437
+231,SmellWell,20% dto. en compras online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850444,2025-06-14T00:15:33.850445
+232,Keds,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850452,2025-06-14T00:15:33.850453
+233,Hush Puppies Kids,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850460,2025-06-14T00:15:33.850461
+234,Mountain Hardwear,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850469,2025-06-14T00:15:33.850470
+235,Bsoul,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850478,2025-06-14T00:15:33.850479
+236,Billabong,"20% dto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850486,2025-06-14T00:15:33.850487
+237,BURTON,"20% dto. miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850495,2025-06-14T00:15:33.850496
+238,Orquídea,25% dto. los días lunes en compras presenciales,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850503,2025-06-14T00:15:33.850504
+239,ToGo,25% dto. Todos los días en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850511,2025-06-14T00:15:33.850512
+240,Bigos,Todos los viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850519,2025-06-14T00:15:33.850520
+241,BUG ME,Todos los días en compra online.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850526,2025-06-14T00:15:33.850527
+242,Clínica Dental Santorini,50% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850534,2025-06-14T00:15:33.850536
+243,Maison Niche,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850543,2025-06-14T00:15:33.850544
+244,Jansport,"20% dcto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850551,2025-06-14T00:15:33.850552
+245,Calpany,"20% dcto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850559,2025-06-14T00:15:33.850560
+246,Element,"20% dcto. los miércoles, jueves y viernes en compra online",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850567,2025-06-14T00:15:33.850568
+247,AKALI,Hasta 40% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850576,2025-06-14T00:15:33.850577
+248,Koychi Korean Street Food,25% dto. todos los miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850584,2025-06-14T00:15:33.850585
+249,Pizzeria Capri Dólares Premio,Consumo por $30.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850592,2025-06-14T00:15:33.850593
+250,Capogrossi Dólares Premio,Consumo por $80.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850600,2025-06-14T00:15:33.850602
+251,Restaurante Hotel Magnolia Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850608,2025-06-14T00:15:33.850610
+252,Áurea Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850617,2025-06-14T00:15:33.850618
+253,Majestic Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850625,2025-06-14T00:15:33.850626
+254,Tanaka La Dehesa Dólares Premio,Consumo por $80.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850633,2025-06-14T00:15:33.850635
+255,La Cocina de Javier Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850642,2025-06-14T00:15:33.850643
+256,YMA Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850650,2025-06-14T00:15:33.850651
+257,Cocoa Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850658,2025-06-14T00:15:33.850659
+258,Zanzíbar Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850666,2025-06-14T00:15:33.850667
+259,Clínica Abedules,Paga en 4 a 12 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850674,2025-06-14T00:15:33.850675
+260,Pitísimas,20% dto. todos los días en pitisimas.cl,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850713,2025-06-14T00:15:33.850715
+261,CLÍNICA ESTÉTICA BIEN ÊTRE,"Hasta 20% dto en limpiezas faciales, masajes y tratamientos corporales.",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850723,2025-06-14T00:15:33.850725
+262,Amandine Bistró Dólares Premio,Consumo por $80.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850733,2025-06-14T00:15:33.850734
+263,Cafetería Espresso Dólares Premio,Consumo por $10.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850741,2025-06-14T00:15:33.850742
+264,Ciudadano Dólares Premio,Consumo por $50.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850749,2025-06-14T00:15:33.850750
+265,La Tabla Dólares Premio,Consumo por $40.000,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850757,2025-06-14T00:15:33.850758
+266,BSoul,"20% dcto. miércoles, jueves y viernes en compra presencial",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850765,2025-06-14T00:15:33.850766
+267,SURISTA,"20% dto. viernes, sábado y domingo",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850773,2025-06-14T00:15:33.850775
+268,Sabores del Perú,"20% dto. lunes, martes y sábado",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850781,2025-06-14T00:15:33.850782
+269,Favara,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850789,2025-06-14T00:15:33.850790
+270,SELVADO,20% dto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850796,2025-06-14T00:15:33.850797
+271,GALPÓN ALONSO,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850804,2025-06-14T00:15:33.850805
+272,YOYO TEA,20% dto. Todos los días en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850812,2025-06-14T00:15:33.850813
+273,Tienda Friosur,"20% dto. todos los lunes, martes y miércoles",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850820,2025-06-14T00:15:33.850821
+274,Geomar,20% dto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850828,2025-06-14T00:15:33.850829
+275,Viña Clos de Luz,30% dto. Todos los días en compra online y tours degustación,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850835,2025-06-14T00:15:33.850836
+276,Europa Secreta,20% dto. Todos los días en compra online y presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850844,2025-06-14T00:15:33.850845
+277,BIGU,20% dto. Todos los días en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850852,2025-06-14T00:15:33.850854
+278,Canasta Raíces Sanas,20% dto. en compras online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850861,2025-06-14T00:15:33.850862
+279,Alma Salud,Hasta 30% dto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850869,2025-06-14T00:15:33.850870
+280,Tendencias Gourmet,20% dto.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850877,2025-06-14T00:15:33.850878
+281,Lola Lash,Hasta 25% dto.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850885,2025-06-14T00:15:33.850886
+282,VIOLETA RESTAURANT,20% dto. martes y jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850892,2025-06-14T00:15:33.850893
+283,THAI EXPRESS,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850900,2025-06-14T00:15:33.850901
+284,MALEVOLO PIZZA,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850908,2025-06-14T00:15:33.850909
+285,Hacienda el Llano,20% dto. Martes y Miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850916,2025-06-14T00:15:33.850917
+286,California Cantina,"20% dto. Lunes, martes y domingo",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850924,2025-06-14T00:15:33.850925
+287,RUGENDAS,20% dto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850931,2025-06-14T00:15:33.850933
+288,MALDITO ARROZ,20% dto. lunes y martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850939,2025-06-14T00:15:33.850941
+289,B BAR,20% dto. Viernes y sábado.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850947,2025-06-14T00:15:33.850948
+290,Castillo Hamburgo,20% dto. Martes y miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850955,2025-06-14T00:15:33.850956
+291,Quercus,20% dto. los martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850962,2025-06-14T00:15:33.850964
+292,Paladar Restobar,20% dto. martes y miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850970,2025-06-14T00:15:33.850971
+293,Emporio San Marco,20% dto. los lunes en compra presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850978,2025-06-14T00:15:33.850979
+294,Olivia Trattoria,20% dto. lunes y viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850986,2025-06-14T00:15:33.850987
+295,Lomo de la Fuente,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.850994,2025-06-14T00:15:33.850995
+296,Sabores del Ají Seco,"20% dto. Lunes, martes y sábado",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851001,2025-06-14T00:15:33.851002
+297,Green Poke,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851009,2025-06-14T00:15:33.851010
+298,Cinque Pizza Restaurant,25% dto. martes y miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851017,2025-06-14T00:15:33.851018
+299,SENIOR SUITES,Hasta 15% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851025,2025-06-14T00:15:33.851026
+300,Fondo de Cultura Económica,25% dto en compra presencial y online.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851033,2025-06-14T00:15:33.851034
+301,KEYPA,40% dcto. Todos los días en compra online.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851041,2025-06-14T00:15:33.851042
+302,CIRCUS BARBER SHOP,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851049,2025-06-14T00:15:33.851050
+303,TRATUR,22% dcto. Todos los días en compra online,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851057,2025-06-14T00:15:33.851058
+304,AC Odontología,50% de descuento.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851065,2025-06-14T00:15:33.851066
+305,Ciudad Vieja,20% dto. martes y miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851073,2025-06-14T00:15:33.851074
+306,ZenClinic,Paga tu tratamiento odontológico en 4 a 12 cuotas sin interés.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851081,2025-06-14T00:15:33.851082
+307,Citadelle,20% dto. martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851089,2025-06-14T00:15:33.851090
+308,First Security,60% dcto. todos los dias,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851097,2025-06-14T00:15:33.851098
+309,YALE,20% dto. En toda la tienda.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851104,2025-06-14T00:15:33.851106
+310,Mattarello,20% dto. lunes y martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851112,2025-06-14T00:15:33.851113
+311,Clínica Agua,Hasta 40% dto. En tratamientos presenciales todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851119,2025-06-14T00:15:33.851120
+312,ALMAPIEL,20% dto. adicional todos los días en compra online y presencial.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851152,2025-06-14T00:15:33.851154
+313,Clínica Ortodoncia Antonella Sivori,Hasta 35% dto. En prestaciones seleccionadas,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851162,2025-06-14T00:15:33.851163
+314,CLINICA NACE,15% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851170,2025-06-14T00:15:33.851171
+315,Saint Patrick´s Day,15% dto. todos los lunes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851178,2025-06-14T00:15:33.851179
+316,Pollo Rey,20% dcto. en delivery de lunes a jueves.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851186,2025-06-14T00:15:33.851187
+317,BurgerBeef,20% dcto. en delivery de lunes a jueves.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851194,2025-06-14T00:15:33.851195
+318,Néctar Deco,20% dcto. Todos los días en compras presencial,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851202,2025-06-14T00:15:33.851203
+319,Ocarrol Rent a Car,30% dto. En arriendos de vehículos,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851210,2025-06-14T00:15:33.851211
+320,MUEBLES EL CIPRÉS,Hasta 20% dcto Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851218,2025-06-14T00:15:33.851219
+321,Velvet Bakery,20% dto. de lunes a jueves de 10:00 a 19:00 hrs,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851226,2025-06-14T00:15:33.851227
+322,Smartdent,Hasta 60% dto. En prestaciones presenciales,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851234,2025-06-14T00:15:33.851235
+323,CELIV,20% dcto los días martes.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851241,2025-06-14T00:15:33.851243
+324,ENGINTEL,20% dto en programas Let´s learn together,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851249,2025-06-14T00:15:33.851250
+325,Viña Espaldares del Maipo,20% dto. En compras presenciales,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851257,2025-06-14T00:15:33.851258
+326,Boga,20% dto. Lunes a viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851265,2025-06-14T00:15:33.851266
+327,Preu Filadd,20% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851272,2025-06-14T00:15:33.851274
+328,La Pesca De Los Mekis,30% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851281,2025-06-14T00:15:33.851282
+329,MY FAMILY PETS,Hasta 15% dto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851289,2025-06-14T00:15:33.851291
+330,Preuniversitario Pedro de Valdivia,20% dto.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851297,2025-06-14T00:15:33.851299
+331,SANASALUD,Hasta 65% dcto. Todos los lunes y martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851305,2025-06-14T00:15:33.851306
+332,Padel Mundo Sport,20% dto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851314,2025-06-14T00:15:33.851315
+333,Clínica CRL,Hasta 50% dcto.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851322,2025-06-14T00:15:33.851323
+334,Mantraa Unisex Salon & Spa,20% dcto. Lunes y Martes en todos los servicios,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851330,2025-06-14T00:15:33.851331
+335,Varvacoa,Hasta 20% dcto. todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851338,2025-06-14T00:15:33.851339
+336,CLINICA ESTÉTICA MI MANTRA,20% dto todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851346,2025-06-14T00:15:33.851348
+337,Bar Medanoso,20% dto. Lunes a viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851355,2025-06-14T00:15:33.851356
+338,Restaurant Urbano 136,20% dto. sábado a lunes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851363,2025-06-14T00:15:33.851364
+339,DHouse,"20% dcto. miércoles, jueves y viernes en compra presencial",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851371,2025-06-14T00:15:33.851372
+340,Caprese,20% dto. Lunes a viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851379,2025-06-14T00:15:33.851380
+341,Ambar Deco,20% dto. En compras presenciales de lunes a sábado,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851386,2025-06-14T00:15:33.851388
+342,Mandala Food & Bar,20% dto. lunes a sábado de 17:00 a 22:00 Hrs,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851395,2025-06-14T00:15:33.851396
+343,MARDELI,20% dto martes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851403,2025-06-14T00:15:33.851404
+344,La Casona del Ají,20% dto. lunes a jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851411,2025-06-14T00:15:33.851412
+345,Brookman,20% dto. de lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851419,2025-06-14T00:15:33.851420
+346,Ceiba,20% dto. todos los jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851427,2025-06-14T00:15:33.851428
+347,Club de San Miguel,20% dto. lunes a miércoles,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851434,2025-06-14T00:15:33.851436
+348,Funsport,"20% dcto. miércoles, jueves y viernes en compra presencial",bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851442,2025-06-14T00:15:33.851444
+349,ICA RESTAURANTE,20% dto. sábado y domingo,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851451,2025-06-14T00:15:33.851452
+350,Taproom Tübinger,20% dto. los Jueves,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851459,2025-06-14T00:15:33.851460
+351,QB Restaurant Bar,30% dto los sábados y domingo y 20% dto. lunes a viernes.,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851467,2025-06-14T00:15:33.851468
+352,PF CHANGS,20% dto. de lunes a viernes,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851476,2025-06-14T00:15:33.851477
+353,Pisco Bou Legado,Hasta 15% dto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851483,2025-06-14T00:15:33.851485
+354,Clínicas Odontologicas Everest,Hasta 64% dcto. Todos los días,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851491,2025-06-14T00:15:33.851492
+355,Oasi di Bellezza,40% de descuento en depilación Láser Soprano Ice,bancodechile,Banco de Chile,Beneficios Bancarios,1,2025-06-14T00:15:33.851499,2025-06-14T00:15:33.851500

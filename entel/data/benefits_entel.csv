@@ -1,0 +1,70 @@
+id,title,description,bank,provider,category,is_active,created_at,updated_at,url
+1,Starbucks,30% dcto. todos los martes y miércoles,entel,Entel,Club Entel,1,2025-06-14T00:26:32.318266,2025-06-14T00:26:32.318329,https://www.entel.cl/beneficios/descuentos/comida/starbucks
+2,Castaño,Aprovecha las promociones desde $2.800 todos los días,entel,Entel,Club Entel,1,2025-06-14T00:26:32.318808,2025-06-14T00:26:32.318834,https://www.entel.cl/beneficios/descuentos/comida/castano
+3,Wild Foods,Dctos. online en productos seleccionados,entel,Entel,Club Entel,1,2025-06-14T00:26:32.319226,2025-06-14T00:26:32.319238,https://www.entel.cl/beneficios/descuentos/comida/wildfoods
+4,Papa Johns,25% de dcto. en el total de tu boleta,entel,Entel,Club Entel,1,2025-06-14T00:26:32.319480,2025-06-14T00:26:32.319492,https://www.entel.cl/beneficios/descuentos/comida/papa-johns
+5,Farmacia Fracción,10% dcto. Compras online en bioequivalentes.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.319898,2025-06-14T00:26:32.319913,https://www.entel.cl/beneficios/descuentos/bienestar/farmacia-fraccion
+6,Natura,30% OFF adicional los viernes,entel,Entel,Club Entel,1,2025-06-14T00:26:32.320255,2025-06-14T00:26:32.320276,https://www.entel.cl/beneficios/descuentos/bienestar/natura
+7,Farmacia Ahumada,Descuentos en compras presenciales.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.320514,2025-06-14T00:26:32.320523,https://www.entel.cl/beneficios/descuentos/bienestar/farmacia-ahumada
+8,Beauty Plus,30% dcto. en todas las compras online.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.320717,2025-06-14T00:26:32.320726,https://www.entel.cl/beneficios/descuentos/tienda/beauty-plus
+9,Late,Dctos. en productos y recargas de botellones,entel,Entel,Club Entel,1,2025-06-14T00:26:32.320958,2025-06-14T00:26:32.320969,https://www.entel.cl/beneficios/descuentos/tienda/late
+10,miCoca-Cola.cl,"25% de dcto. en el total de tu boleta, al comprar online",entel,Entel,Club Entel,1,2025-06-14T00:26:32.321180,2025-06-14T00:26:32.321187,https://www.entel.cl/beneficios/descuentos/comida/cocacola
+11,Klean Kanteen,Hasta 30% dcto. en limitesur.cl y tiendas físicas,entel,Entel,Club Entel,1,2025-06-14T00:26:32.321445,2025-06-14T00:26:32.321452,https://www.entel.cl/beneficios/descuentos/tienda/klean-kanteen
+12,Belsport ,20% de Dcto. en Belsport,entel,Entel,Club Entel,1,2025-06-14T00:26:32.321613,2025-06-14T00:26:32.321622,https://www.entel.cl/beneficios/descuentos/tienda/belsport
+13,Kylie Minogue,Kylie Minogue - Movistar Arena \n12 de agosto 2025,entel,Entel,Club Entel,1,2025-06-14T00:26:32.321771,2025-06-14T00:26:32.321779,https://www.entel.cl/beneficios/eventos/kylie-minogue
+14,Chayanne,"Chayanne - Movistar Arena \n 20, 21 y 23 de agosto 2025",entel,Entel,Club Entel,1,2025-06-14T00:26:32.321926,2025-06-14T00:26:32.321932,https://www.entel.cl/beneficios/eventos/chayanne
+15,Katy Perry,Estadio Bicentenario de la Florida. \n 6 de septiembre 2025,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322072,2025-06-14T00:26:32.322077,https://www.entel.cl/beneficios/eventos/katy-perry
+16,Hozier,Movistar Arena \n 24 de mayo de 2025,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322174,2025-06-14T00:26:32.322177,https://www.entel.cl/beneficios/eventos/hozier
+17,Entrelagos,15% de dcto. en compras realizadas de manera online,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322243,2025-06-14T00:26:32.322245,https://www.entel.cl/beneficios/descuentos/comida/entrelagos
+18,Corrales del Sur,15% dcto. embutidos y línea hogar todos los lunes.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322393,2025-06-14T00:26:32.322396,https://www.entel.cl/beneficios/descuentos/comida/corralesdelsur
+19,Mamut,20% OFF en toda la carta de Restaurant Mamut,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322480,2025-06-14T00:26:32.322485,https://www.entel.cl/beneficios/descuentos/comida/mamut
+20,Green Lab,15% dcto de sábado a miércoles en toda la carta,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322565,2025-06-14T00:26:32.322568,https://www.entel.cl/beneficios/descuentos/comida/green-lab
+21,Local Burger,25% de dcto. de Domingo a Martes.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322629,2025-06-14T00:26:32.322631,https://www.entel.cl/beneficios/descuentos/comida/local-burguer
+22,Do Sushi,25% de dcto. de Domingo a Martes.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322695,2025-06-14T00:26:32.322699,https://www.entel.cl/beneficios/descuentos/comida/do-sushi
+23,Tommy Beans,30% Descuento en todo el menú de lunes a jueves,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322759,2025-06-14T00:26:32.322763,https://www.entel.cl/beneficios/descuentos/comida/tommybeans
+24,Juan Maestro,30% Descuento en todo el menú de lunes a jueves,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322830,2025-06-14T00:26:32.322832,https://www.entel.cl/beneficios/descuentos/comida/juanmaestro
+25,Rappi,90% dcto en envíos por 3 meses,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322892,2025-06-14T00:26:32.322895,https://www.entel.cl/beneficios/descuentos/comida/rappi
+26,Franchute,20% dcto en la barra los martes y miércoles,entel,Entel,Club Entel,1,2025-06-14T00:26:32.322950,2025-06-14T00:26:32.322953,https://www.entel.cl/beneficios/descuentos/comida/franchute
+27,Restaurante Olivia,15% Dcto.Restaurante Olivia en toda la carta,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323020,2025-06-14T00:26:32.323023,https://www.entel.cl/beneficios/descuentos/comida/restaurante-olivia
+28,Bar el callejón,20% Dcto. de domingo a miércoles,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323086,2025-06-14T00:26:32.323089,https://www.entel.cl/beneficios/descuentos/comida/bar-el-callejon
+29,Just Burger,"30% en Just Burger Lunes, Martes, Jueves y Domingo",entel,Entel,Club Entel,1,2025-06-14T00:26:32.323154,2025-06-14T00:26:32.323156,https://www.entel.cl/beneficios/descuentos/comida/justburger
+30,Hola Ola,20% dcto. en cafetería,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323216,2025-06-14T00:26:32.323218,https://www.entel.cl/beneficios/descuentos/comida/hola-ola
+31,Doggis,30% dcto en todo el menú de lunes a jueves,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323281,2025-06-14T00:26:32.323284,https://www.entel.cl/beneficios/descuentos/comida/doggis
+32,Escuela de Surf Maintencillo,Dcto. en clases y arriendo de equipo,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323433,2025-06-14T00:26:32.323437,https://www.entel.cl/beneficios/descuentos/deportes/surf-maitencillo
+33,Easycancha,3 meses de prueba gratis con suscripción PRIME,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323571,2025-06-14T00:26:32.323573,https://www.entel.cl/beneficios/descuentos/deportes/easycancha
+34,Parques Outlife,Dctos. en Parques RKF El Durazno y Outlife Chamisero,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323638,2025-06-14T00:26:32.323641,https://www.entel.cl/beneficios/descuentos/sostenibilidad/parques-outlife
+35,The Body Shop,15% Dcto. en productos The Body Shop,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323696,2025-06-14T00:26:32.323698,https://www.entel.cl/beneficios/descuentos/bienestar/bodyshop
+36,Glam & Co,20% de descuento de lunes a jueves en salones.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323752,2025-06-14T00:26:32.323757,https://www.entel.cl/beneficios/descuentos/bienestar/glamco
+37,Ibis,15% Dcto.en IBIS Concepción,entel,Entel,Club Entel,1,2025-06-14T00:26:32.323911,2025-06-14T00:26:32.323919,https://www.entel.cl/beneficios/descuentos/bienestar/ibis
+38,Ópticas Schilling,20% dcto. en lentes ópticos y sol,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324113,2025-06-14T00:26:32.324118,https://www.entel.cl/beneficios/descuentos/bienestar/opticas-schilling
+39,Assist Card,10% dcto. adicional sobre la tarifa vigente,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324207,2025-06-14T00:26:32.324211,https://www.entel.cl/beneficios/descuentos/transporte/assist-card
+40,Taller F,20% dcto. personaliza y renueva tu closet,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324287,2025-06-14T00:26:32.324289,https://www.entel.cl/beneficios/descuentos/tienda/taller-f
+41,Bamers,20% de dcto. en web y tienda,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324359,2025-06-14T00:26:32.324362,https://www.entel.cl/beneficios/descuentos/tienda/bamers
+42,Oakley,20% dcto. en web y tienda.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324601,2025-06-14T00:26:32.324605,https://www.entel.cl/beneficios/descuentos/tienda/oakley
+43,Super Zoo ,Hasta 20% Dcto. en Tienda Online,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324695,2025-06-14T00:26:32.324700,https://www.entel.cl/beneficios/descuentos/tienda/super-zoo
+44,Ripley,"Hasta 30% en vestuario hombre, mujer, infantil.",entel,Entel,Club Entel,1,2025-06-14T00:26:32.324788,2025-06-14T00:26:32.324792,https://www.entel.cl/beneficios/descuentos/tienda/ripley
+45,Marathon,10% dcto. adicional los martes,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324864,2025-06-14T00:26:32.324867,https://www.entel.cl/beneficios/descuentos/tienda/marathon
+46,Parque Aventura,20% dcto. en entradas a Parque Aventura,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324931,2025-06-14T00:26:32.324933,https://www.entel.cl/beneficios/descuentos/entretencion/parque-aventura
+47,Aventura Kids,20% Dcto. En aventura Kids,entel,Entel,Club Entel,1,2025-06-14T00:26:32.324994,2025-06-14T00:26:32.324998,https://www.entel.cl/beneficios/descuentos/entretencion/aventura-kids
+48,Kidzania,20% dcto. en entradas,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325074,2025-06-14T00:26:32.325077,https://www.entel.cl/beneficios/descuentos/entretencion/kidzania
+49,Cinemark,Dctos. especiales en entradas y confitería,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325146,2025-06-14T00:26:32.325149,https://www.entel.cl/beneficios/descuentos/cine/cinemark-presencial
+50,Roda,15% dcto. en www.roda.cl,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325213,2025-06-14T00:26:32.325215,https://www.entel.cl/beneficios/descuentos/sostenibilidad/roda
+51,Mut,Disfruta de los descuentos de BICIHUB MUT,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325269,2025-06-14T00:26:32.325271,https://www.entel.cl/beneficios/descuentos/sostenibilidad/mut
+52,eClass,40% dcto. en diplomados eClass Academy,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325329,2025-06-14T00:26:32.325332,https://www.entel.cl/beneficios/descuentos/sostenibilidad/eclass
+53,Karün,25% dcto. en anteojos de sol,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325403,2025-06-14T00:26:32.325406,https://www.entel.cl/beneficios/descuentos/sostenibilidad/karun
+54,Freemet,Descuentos exclusivos en compras online,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325470,2025-06-14T00:26:32.325472,https://www.entel.cl/beneficios/descuentos/sostenibilidad/free-met
+55,Copec Voltex,10% dcto. en servicio de cargador,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325533,2025-06-14T00:26:32.325535,https://www.entel.cl/beneficios/descuentos/copec-voltex
+56,Ecocitex,25% en el total de la compra,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325590,2025-06-14T00:26:32.325593,https://www.entel.cl/beneficios/descuentos/sostenibilidad/ecocitex
+57,Chiletur Copec,15% dcto. en productos disponibles en chile.tur.com,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325652,2025-06-14T00:26:32.325654,https://www.entel.cl/beneficios/descuentos/sostenibilidad/chiletur-copec
+58,FlixBus,20% de dcto. en la compra de pasajes,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325713,2025-06-14T00:26:32.325716,https://www.entel.cl/beneficios/descuentos/transporte/flixbus
+59,Turbus,15% Dcto. En compras online,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325856,2025-06-14T00:26:32.325860,https://www.entel.cl/beneficios/descuentos/transporte/turbus
+60,Cabify,4 viajes por mes por usuario con 15% dcto. tope $2.000,entel,Entel,Club Entel,1,2025-06-14T00:26:32.325949,2025-06-14T00:26:32.325952,https://www.entel.cl/beneficios/descuentos/transporte/cabify
+61,Euro Rent a Car,30% dcto en arriendo de cualquier vehículo,entel,Entel,Club Entel,1,2025-06-14T00:26:32.326057,2025-06-14T00:26:32.326060,https://www.entel.cl/beneficios/descuentos/transporte/euro-rent
+62,Cóndor Bus,15% dcto. En compras online www.condorbus.cl,entel,Entel,Club Entel,1,2025-06-14T00:26:32.326188,2025-06-14T00:26:32.326192,https://www.entel.cl/beneficios/descuentos/transporte/condor-bus
+63,Linkin Park,"Estadio Nacional \n 2 de noviembre, 2025",entel,Entel,Club Entel,1,2025-06-14T00:26:32.326319,2025-06-14T00:26:32.326323,https://www.entel.cl/beneficios/eventos/linkin-park
+64,Rauw Alejandro,"Movistar Arena \n 14 octubre, 2025",entel,Entel,Club Entel,1,2025-06-14T00:26:32.326425,2025-06-14T00:26:32.326430,https://www.entel.cl/beneficios/eventos/rauw-alejandro
+65,Sundeck - Bob Moses,"Espacio Riesco,Gran Salón \n 13 de Junio",entel,Entel,Club Entel,1,2025-06-14T00:26:32.326634,2025-06-14T00:26:32.326639,https://www.entel.cl/beneficios/eventos/sundeck-bob-moses
+66,Green Day,"Parque Estadio Nacional \n 30 agosto, 2025",entel,Entel,Club Entel,1,2025-06-14T00:26:32.326727,2025-06-14T00:26:32.326730,https://www.entel.cl/beneficios/eventos/green-day
+67,Sundeck - The Grid,"Espacio Riesco \n 30 agosto, 2025",entel,Entel,Club Entel,1,2025-06-14T00:26:32.326833,2025-06-14T00:26:32.326839,https://www.entel.cl/beneficios/eventos/sundeck-the-grid
+68,AkiKB,25% dcto. en arriendo de MINIBODEGAS por 3 meses.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.326996,2025-06-14T00:26:32.327003,https://www.entel.cl/beneficios/descuentos/akikb
+69,Blue Express Copec,20% dcto. En envíos prepagos.,entel,Entel,Club Entel,1,2025-06-14T00:26:32.327141,2025-06-14T00:26:32.327146,https://www.entel.cl/beneficios/descuentos/blue-express-copec
